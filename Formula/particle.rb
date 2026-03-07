@@ -1,26 +1,26 @@
 class Particle < Formula
   desc "CLI for RunParticle - instant cloud VMs from your terminal"
   homepage "https://runparticle.com"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://runparticle.com/releases/particle-darwin-arm64"
-      sha256 "f5253812651ab8020e58acc42272a96942f949cb5a42a899c17e0cbb905d43ad"
+      sha256 "a593face8e1e1efe0e012bb13949f2e39896a7f0438a9db984e07422f0d867a2"
     else
       url "https://runparticle.com/releases/particle-darwin-amd64"
-      sha256 "6b9a51bc9e63ff72cf5427b16c7472e65c97e80cb3e7acfa99a102378407ca36"
+      sha256 "62ea940aac9b3a1d1caf09e88f8f01b07de4bfb491d55c87bcd4498bc96ba9b4"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://runparticle.com/releases/particle-linux-arm64"
-      sha256 "14bf01e89552ccac922411ef623d7d0325accd3f22bac73e4af9bf51fc1da724"
+      sha256 "ca8083d916e3479e30c4869ab04919e3b1ecc2d642054c77885faf61fd92a082"
     else
       url "https://runparticle.com/releases/particle-linux-amd64"
-      sha256 "220b60d995a8075cd4c02d451c4c6582bd2a297a423dc4dcaf014d881e01965f"
+      sha256 "e7245619da0ccca905373437bcaa5cbfef26b7367a8581dc625e517288472244"
     end
   end
 

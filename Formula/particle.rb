@@ -6,25 +6,21 @@ class Particle < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mj1618/runparticle.com/releases/download/v0.1.0/particle-darwin-arm64",
-        header: "Authorization: token #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", "")}"
-      sha256 "860b4ff93025cc18cfa234804760bf591513c620940b169a3e94820917d5e413"
+      url "https://runparticle.com/releases/particle-darwin-arm64"
+      sha256 "f1541da158eedad4217bef8e70641ed984706bf07c6b058a6a09eeffbc2aed6d"
     else
-      url "https://github.com/mj1618/runparticle.com/releases/download/v0.1.0/particle-darwin-amd64",
-        header: "Authorization: token #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", "")}"
-      sha256 "6327f05b0496ae62efc5a8a46bd8a1451a3b2b3671b9627f729dedfd685cf8be"
+      url "https://runparticle.com/releases/particle-darwin-amd64"
+      sha256 "184a3f357d3ba752f880cc425747368695157c1ed56f07158f9c1e64e8f2be39"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/mj1618/runparticle.com/releases/download/v0.1.0/particle-linux-arm64",
-        header: "Authorization: token #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", "")}"
-      sha256 "d90c9d509117da13b51b9191fe69225375acf53648e0e2f3861e3d17b85fe916"
+      url "https://runparticle.com/releases/particle-linux-arm64"
+      sha256 "06e44f4235b9683a4f9a091af55cfd350839e5848fba765247c06661d22897b2"
     else
-      url "https://github.com/mj1618/runparticle.com/releases/download/v0.1.0/particle-linux-amd64",
-        header: "Authorization: token #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", "")}"
-      sha256 "8289f3616a57dbada592053ef6e70a94d027acb08b797638928f51ff5aae439f"
+      url "https://runparticle.com/releases/particle-linux-amd64"
+      sha256 "486cd017168d28c59997459161164a3a56a34a4117637c3659487304f3409548"
     end
   end
 

@@ -7,20 +7,20 @@ class Particle < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://runparticle.com/releases/particle-darwin-arm64"
-      sha256 "cf338af6180d08f64e7a3d3572db6455c80437cf9d11266276834dd657aa8a98"
+      sha256 "7c39f59a1394af042811936c8c11681c768c66e096f29450795cc9f1f75633c0"
     else
       url "https://runparticle.com/releases/particle-darwin-amd64"
-      sha256 "84b269911c06f512ad9262713c46488f28dabe37c6064c81b27ffa8261c9105d"
+      sha256 "a68f935d9e76a26db4fcf24d02b113a37b82f552af5ea586744f5f2cbd4b079a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://runparticle.com/releases/particle-linux-arm64"
-      sha256 "c166e39d7dd56d309552df96846114d5872ca727eee56c96f189d2c931e09689"
+      sha256 "d85ffe8277db7835f37c9bafd8529573408664ac3f26140d9fc1816528a19ff4"
     else
       url "https://runparticle.com/releases/particle-linux-amd64"
-      sha256 "73b6c5c2aa4c25c5ec3516e272b73b7dd68f1d45be278043fb5798eb6d4716c7"
+      sha256 "f6637bbfbff83ee7e420ae714fae675ef9bb5069ead28e71c97bb9faffbda23e"
     end
   end
 
